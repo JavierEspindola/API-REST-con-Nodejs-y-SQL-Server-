@@ -1,0 +1,44 @@
+@api = http://localhost:3000/products
+
+### GETTING THE PRODUCTS
+GET {{api}}
+
+### INSERT A PRODUCT
+POST {{api}}
+Content-Type: application/json
+ 
+{
+    "name": "Muñeco",
+    "description": "SOFITAS",
+    "quantity": 2
+}
+
+### GETTING A PRODUCT
+GET {{api}}/2
+
+### DELETING A PRODUCT
+DELETE {{api}}/6 
+
+### GET TOTAL PRODUCTS
+GET {{api}}/count
+
+### UPDATING A PRODUCT
+PUT {{api}}/9
+Content-Type: application/json
+
+{
+    "name":"mouse",
+    "description": "mouse laser ryzer",
+    "quantity": 50
+}
+
+
+
+
+
+
+
+
+
+
+
